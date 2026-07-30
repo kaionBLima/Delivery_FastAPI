@@ -1,6 +1,7 @@
 from models import db
 from sqlalchemy.orm import sessionmaker
 
+
 def pegar_sessao():
     try:    #tentar executar a função
         Session = sessionmaker(bind=db)
